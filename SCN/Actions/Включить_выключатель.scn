@@ -1,0 +1,8 @@
+SET "devices.sdf\Brk\brk_State\brk_Id\%1%\c" "{1}"
+
+VBS
+BEGIN
+ Set rm = GetObject(,"Cascade.ResModel")
+ rm.PerformRZA("%1%")
+ rm.Calc()
+END
